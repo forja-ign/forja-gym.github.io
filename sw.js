@@ -1,7 +1,7 @@
 /* FORJA — service worker: instalación y uso sin conexión.
    Solo toca sus propias cachés (forja-*): otras apps del mismo github.io (p. ej. Bonsai) quedan intactas. */
-const CACHE = 'forja-v6';
-const SHELL = ['./', 'index.html', 'css/styles.css', 'js/data.js', 'js/app.js', 'manifest.webmanifest', 'icons/icon-192.png', 'icons/icon-512.png', 'icons/maskable-192.png', 'icons/maskable-512.png', 'icons/icon.svg', 'icons/screen-1.png', 'icons/screen-2.png', 'icons/screen-3.png'];
+const CACHE = 'forja-v7';
+const SHELL = ['./', 'index.html', 'css/styles.css', 'js/data.js', 'js/app.js', 'manifest.webmanifest', 'icons/icon-192.png', 'icons/icon-512.png', 'icons/maskable-192.png', 'icons/maskable-512.png', 'icons/icon.svg'];
 
 self.addEventListener('install', (e) => {
   // Cada archivo por separado: si uno falla, el resto se guarda igual y la app sigue siendo instalable

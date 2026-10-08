@@ -64,4 +64,4 @@ Todo se guarda en el `localStorage` del navegador, solo en ese dispositivo. Si b
 
 ## Actualizar la app
 
-Cuando cambies archivos, sube la versión en `sw.js` (por ejemplo, de `forja-v6` a `const CACHE = 'forja-v7'`) para que los móviles que ya la tienen instalada descarguen la versión nueva.
+Cuando cambies archivos, sube la versión en `sw.js` (por ejemplo, de `forja-v7` a `const CACHE = 'forja-v8'`) para que los móviles que ya la tienen instalada descarguen la versión nueva.
