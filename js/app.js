@@ -913,7 +913,7 @@ const INST = { sw: null, manifest: null, err: '' };
 const isStandalone = () => matchMedia('(display-mode: standalone)').matches || matchMedia('(display-mode: fullscreen)').matches || navigator.standalone === true;
 const isSecure = () => location.protocol === 'https:' || ['localhost', '127.0.0.1'].includes(location.hostname);
 const inAppBrowser = () => /; wv\)|FBAN|FBAV|Instagram|Line\/|WhatsApp|GSA\/|Telegram/i.test(navigator.userAgent);
-window.addEventListener('beforeinstallprompt', (e) => { e.preventDefault(); installEvt = e; render(); renderSettings(); });
+window.addEventListener('beforeinstallprompt', (e) => { installEvt = e; render(); renderSettings(); });
 window.addEventListener('appinstalled', () => { installEvt = null; toast('FORJA instalada en tu móvil', 'check'); render(); renderSettings(); });
 async function doInstall() {
   if (!installEvt) { openInstallHelp(); return; }

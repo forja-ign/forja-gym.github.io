@@ -53,10 +53,11 @@ css/styles.css         Estilos (gris oscuro + naranja rojizo)
 js/data.js             Iconos, ejercicios y rutinas que vienen de serie
 js/app.js              Lógica de la app
 icons/                 Icono de la app (SVG + PNG)
+fonts/                 Tipografías Inter e Inter Tight (licencia OFL)
 .nojekyll              Hace que GitHub Pages sirva los archivos tal cual
 ```
 
-Sin frameworks ni dependencias: HTML, CSS y JavaScript puro. La tipografía (Inter Tight para títulos y cifras, Inter para el texto) se carga desde Google Fonts.
+Sin frameworks ni dependencias: HTML, CSS y JavaScript puro. La tipografía (Inter Tight para títulos y cifras, Inter para el texto) va incluida en la carpeta `fonts/`, así funciona sin conexión.
 
 ## Sobre los datos
 
@@ -64,4 +65,4 @@ Todo se guarda en el `localStorage` del navegador, solo en ese dispositivo. Si b
 
 ## Actualizar la app
 
-Cuando cambies archivos, sube la versión en `sw.js` (por ejemplo, de `forja-v7` a `const CACHE = 'forja-v8'`) para que los móviles que ya la tienen instalada descarguen la versión nueva.
+Cuando cambies archivos, sube la versión en `sw.js` (por ejemplo, de `forja-v8` a `const CACHE = 'forja-v9'`) para que los móviles que ya la tienen instalada descarguen la versión nueva.
